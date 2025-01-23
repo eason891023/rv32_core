@@ -103,17 +103,17 @@ class core(pluginTemplate):
             bin2hex_cmd = "python /home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/bin_to_hex.py my.bin code.mem"
 
             iverilog_cmd = (
-                        "iverilog -Wall -I /home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core -o simv -g2012 "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/core.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/alu.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/br_unit.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/csr.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/decoder.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/ma_ctrl.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/r_data_fmt.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/ram.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/reg_file.v "
-                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/test_bench.v "
+                        "iverilog -Wall -I /home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main -o simv -g2012 "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/core.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/alu.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/br_unit.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/csr.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/decoder.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/ma_ctrl.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/r_data_fmt.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/ram.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/reg_file.v "
+                        + "/home/eason/Desktop/ComputerArchitecture/Final_Project/rv32_core/core/src/main/test_bench.v "
                     )
             vvp_cmd = (
                 f"vvp simv +signature={sig_file} "
